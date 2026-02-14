@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="100 Aulas Prontas de Vôlei - Economize horas de planejamento com aulas completas e prontas para aplicar.">
+    <title>100 Aulas Prontas de Vôlei - Material Completo para Professores</title>
+    
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '2048400315940964');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=2048400315940964&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    
+    <style>
+        /* ========================================
+           RESET E CONFIGURAÇÕES GERAIS
+        ======================================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* ========================================
+           VARIÁVEIS DE CORES
+        ======================================== */
+        :root {
+            --cor-primaria: #0d3b66;      /* Azul escuro */
+            --cor-secundaria: #ff6b35;    /* Laranja */
+            --cor-destaque: #ffc300;      /* Amarelo/Ouro */
+            --cor-sucesso: #2ecc71;       /* Verde */
+            --cor-texto: #333;
+            --cor-texto-claro: #666;
+            --cor-fundo: #f8f9fa;
+            --cor-branco: #ffffff;
+            --sombra: 0 4px 15px rgba(0, 0, 0, 0.1);
+            --sombra-forte: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--cor-texto);
+            background-color: var(--cor-fundo);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* ========================================
+           TIPOGRAFIA
+        ======================================== */
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        /* ========================================
+           BOTÕES CTA
+        ======================================== */
+        .btn-cta {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--cor-secundaria) 0%, #ff8c42 100%);
+            color: white;
+            padding: 1.2rem 3rem;
+            font-size: 1.25rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 50px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: var(--sombra-forte);
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(255, 107, 53, 0.6);
+            background: linear-gradient(135deg, #ff8c42 0%, var(--cor-secundaria) 100%);
+        }
+
+        .btn-cta:active {
+            transform: translateY(-1px);
+        }
+
+        /* ========================================
+           SEÇÃO HERO (PRIMEIRA DOBRA)
+        ======================================== */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(rgba(13, 59, 102, 0.85), rgba(13, 59, 102, 0.85)),
+                        url('https://images.pexels.com/photos/1263426/pexels-photo-1263426.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=1') center/cover no-repeat;
+            color: white;
+            padding: 2rem;
+        }
+
+        .hero-container {
+            max-width: 1200px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .hero-content {
+            z-index: 2;
+        }
+
+        .hero h1 {
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        .hero-mockup {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-mockup img {
+            box-shadow: var(--sombra-forte);
+            border-radius: 8px;
+            max-width: 350px; /* Ajuste para melhor visualização da capa */
+        }
+
+        /* ========================================
+           SEÇÕES GERAIS
+        ======================================== */
+        section {
+            padding: 5rem 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* ========================================
+           SEÇÃO DE PROBLEMA
+        ======================================== */
+        .problema {
+            background: white;
+        }
+
+        .problema h2 {
+            color: var(--cor-primaria);
+        }
+
+        .problema-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            font-size: 1.15rem;
+            color: var(--cor-texto-claro);
+            font-style: italic;
+        }
+
+        .problema-lista {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .problema-item {
+            background: var(--cor-fundo);
+            padding: 1.5rem 2rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            border-left: 5px solid var(--cor-secundaria);
+            transition: transform 0.3s ease;
+            box-shadow: var(--sombra);
+        }
+
+        .problema-item:hover {
+            transform: translateX(10px);
+        }
+
+        .problema-item p {
+            font-size: 1.1rem;
+            margin: 0;
+            color: var(--cor-texto);
+        }
+
+        .problema-conclusao {
+            text-align: center;
+            max-width: 800px;
+            margin: 3rem auto 0;
+            font-size: 1.2rem;
+            color: var(--cor-primaria);
+            font-weight: 600;
+            padding: 2rem;
+            background: #fff3e0;
+            border-radius: 8px;
+            border: 2px solid var(--cor-destaque);
+        }
+
+        /* ========================================
+           SEÇÃO DE SOLUÇÃO
+        ======================================== */
+        .solucao {
+            background: linear-gradient(135deg, var(--cor-primaria) 0%, #1a5490 100%);
+            color: white;
+        }
+
+        .solucao h2 {
+            color: white;
+        }
+
+        .solucao-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            font-size: 1.2rem;
+        }
+
+        .solucao-lista {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2.5rem;
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .solucao-item {
+            padding: 1.2rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .solucao-item:last-child {
+            border-bottom: none;
+        }
+
+        .solucao-item::before {
+            content: "✓";
+            color: var(--cor-sucesso);
+            font-weight: 700;
+            font-size: 1.8rem;
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+
+        .solucao-item strong {
+            color: var(--cor-destaque);
+        }
+
+        /* ========================================
+           SEÇÃO DE BENEFÍCIOS
+        ======================================== */
+        .beneficios {
+            background: white;
+        }
+
+        .beneficios h2 {
+            color: var(--cor-primaria);
+        }
+
+        .beneficios-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+
+        .beneficio-card {
+            background: linear-gradient(135deg, var(--cor-fundo) 0%, var(--cor-branco) 100%);
+            padding: 2.5rem;
+            border-radius: 15px;
+            text-align: left;
+            box-shadow: var(--sombra);
+            transition: all 0.3s ease;
+            border-top: 4px solid var(--cor-secundaria);
+        }
+
+        .beneficio-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--sombra-forte);
+        }
+
+        .beneficio-icon {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        .beneficio-card h3 {
+            color: var(--cor-primaria);
+            margin-bottom: 1rem;
+        }
+
+        .beneficio-card p {
+            color: var(--cor-texto-claro);
+        }
+
+        /* ========================================
+           SEÇÃO "O QUE VOCÊ RECEBE"
+        ======================================== */
+        .conteudo {
+            background: var(--cor-fundo);
+        }
+
+        .conteudo h2 {
+            color: var(--cor-primaria);
+        }
+
+        .conteudo-box {
+            background: white;
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: var(--sombra-forte);
+            border: 3px solid var(--cor-secundaria);
+        }
+
+        .conteudo-lista {
+            list-style: none;
+        }
+
+        .conteudo-lista li {
+            font-size: 1.2rem;
+            margin-bottom: 1.2rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .conteudo-lista li::before {
+            content: "🏐";
+            margin-right: 1rem;
+        }
+
+        .conteudo-lista li:last-child {
+            margin-bottom: 0;
+        }
+
+        /* ========================================
+           SEÇÃO DE PREÇO
+        ======================================== */
+        .preco {
+            background: var(--cor-primaria);
+            color: white;
+            text-align: center;
+        }
+
+        .preco h2 {
+            color: white;
+        }
+
+        .preco-box {
+            background: white;
+            color: var(--cor-texto);
+            max-width: 500px;
+            margin: 3rem auto 0;
+            padding: 4rem 3rem;
+            border-radius: 20px;
+            box-shadow: var(--sombra-forte);
+            position: relative;
+        }
+
+        .preco-antigo {
+            text-decoration: line-through;
+            color: var(--cor-texto-claro);
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .preco-atual {
+            font-size: 4rem;
+            font-weight: 800;
+            color: var(--cor-primaria);
+            margin-bottom: 1.5rem;
+        }
+
+        .preco-destaque {
+            font-weight: 600;
+            color: var(--cor-secundaria);
+            margin-bottom: 2.5rem;
+            font-size: 1.1rem;
+        }
+
+        /* ========================================
+           SEÇÃO DE GARANTIA
+        ======================================== */
+        .garantia {
+            background: white;
+        }
+
+        .garantia h2 {
+            color: var(--cor-primaria);
+        }
+
+        .garantia-box {
+            max-width: 900px;
+            margin: 3rem auto 0;
+            background: #f0f7ff;
+            padding: 4rem;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            border: 2px dashed var(--cor-primaria);
+        }
+
+        .garantia-selo {
+            font-size: 5rem;
+            margin-bottom: 2rem;
+        }
+
+        .garantia-texto {
+            font-size: 1.2rem;
+            color: var(--cor-texto);
+            max-width: 700px;
+        }
+
+        /* ========================================
+           RODAPÉ
+        ======================================== */
+        footer {
+            background: #111;
+            color: #ccc;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        footer p {
+            margin-bottom: 1rem;
+        }
+
+        .footer-aviso {
+            font-size: 0.85rem;
+            max-width: 800px;
+            margin: 2rem auto 0;
+            padding-top: 2rem;
+            border-top: 1px solid #333;
+        }
+
+        /* ========================================
+           RESPONSIVIDADE
+        ======================================== */
+        @media (max-width: 992px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero-mockup {
+                margin-top: 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            .hero-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .hero-mockup {
+                order: -1;
+            }
+
+            .btn-cta {
+                padding: 1rem 2rem;
+                font-size: 1.1rem;
+                width: 100%;
+            }
+
+            section {
+                padding: 3rem 1.5rem;
+            }
+
+            .preco-atual {
+                font-size: 3rem;
+            }
+
+            .beneficios-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .conteudo-box,
+            .preco-box,
+            .garantia-box {
+                padding: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.6rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+
+            .preco-atual {
+                font-size: 2.5rem;
+            }
+
+            .conteudo-lista li {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ========================================
+         SEÇÃO HERO (PRIMEIRA DOBRA)
+    ======================================== -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Chega de perder noites! Economize horas de planejamento com 100 aulas de vôlei prontas para aplicar.</h1>
+                <p class="hero-subtitle">
+                    Tenha em mãos um material completo, organizado e validado, que transforma seu tempo livre em qualidade de vida e suas aulas em um sucesso instantâneo.
+                </p>
+                <a href="https://pay.cakto.com.br/vqca5rh_767670" class="btn-cta" id="cta1">
+                    <!-- COLOCAR AQUI O LINK DO CHECKOUT DA CAKTO -->
+                    Quero Minhas Aulas Prontas Agora!
+                </a>
+            </div>
+            <div class="hero-mockup">
+                <!-- Imagem da capa do produto inserida conforme solicitado -->
+                <img src="capaproduto1.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SEÇÃO DE PROBLEMA
+    ======================================== -->
+    <section class="problema">
+        <div class="container">
+            <h2>Você se identifica com isso?</h2>
+            <p class="problema-intro">
+                "Sabemos que a paixão pelo vôlei e pela educação física é enorme, mas a rotina de um professor é exaustiva. Quantas vezes você se viu..."
+            </p>
+            
+            <div class="problema-lista">
+                <div class="problema-item">
+                    <p>"Sem tempo para planejar aulas criativas e engajadoras?"</p>
+                </div>
+
+                <div class="problema-item">
+                    <p>"Chegando em casa exausto, sem energia para pensar no dia seguinte?"</p>
+                </div>
+
+                <div class="problema-item">
+                    <p>"Preso em um ciclo de planejamento repetitivo, sem novidades para seus alunos?"</p>
+                </div>
+
+                <div class="problema-item">
+                    <p>"Sacrificando noites de sono e até suas férias para organizar o conteúdo das aulas?"</p>
+                </div>
+            </div>
+
+            <p class="problema-conclusao">
+                Essa 'trava mental' no planejamento não só rouba seu tempo, mas também sua energia e a qualidade das suas aulas.
+            </p>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SEÇÃO DE SOLUÇÃO
+    ======================================== -->
+    <section class="solucao">
+        <div class="container">
+            <h2>A Solução Definitiva para o Seu Planejamento!</h2>
+            <p class="solucao-intro">
+                Imagine ter um "sistema operacional" para suas aulas de vôlei, onde tudo já está pronto e testado. Com o <strong>100 Aulas Prontas de Vôlei</strong>, você recebe:
+            </p>
+
+            <div class="solucao-lista">
+                <div class="solucao-item">
+                    <p><strong>100 Atividades Completas:</strong> Do aquecimento ao feedback, tudo detalhado.</p>
+                </div>
+
+                <div class="solucao-item">
+                    <p><strong>Objetivo Claro:</strong> Cada aula com um propósito pedagógico definido.</p>
+                </div>
+
+                <div class="solucao-item">
+                    <p><strong>Materiais Necessários:</strong> Lista prática para você se preparar sem estresse.</p>
+                </div>
+
+                <div class="solucao-item">
+                    <p><strong>Passo a Passo Detalhado:</strong> Instruções claras para aplicação imediata.</p>
+                </div>
+
+                <div class="solucao-item">
+                    <p><strong>Aplicação Imediata:</strong> Pegar, ler e aplicar na sua próxima aula!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SEÇÃO DE BENEFÍCIOS
+    ======================================== -->
+    <section class="beneficios">
+        <div class="container">
+            <h2>O Que Você Ganha ao Escolher o 100 Aulas Prontas de Vôlei?</h2>
+            
+            <div class="beneficios-grid">
+                <div class="beneficio-card">
+                    <span class="beneficio-icon">⏱️</span>
+                    <h3>Economia de Tempo</h3>
+                    <p>Recupere horas preciosas do seu dia. Mais tempo para você, sua família e seus hobbies.</p>
+                </div>
+
+                <div class="beneficio-card">
+                    <span class="beneficio-icon">📅</span>
+                    <h3>Organização do Bimestre</h3>
+                    <p>Tenha seu planejamento anual ou bimestral resolvido com um clique. Nunca mais se preocupe com a sequência das aulas.</p>
+                </div>
+
+                <div class="beneficio-card">
+                    <span class="beneficio-icon">😌</span>
+                    <h3>Redução de Estresse</h3>
+                    <p>Diga adeus à ansiedade do planejamento. Mais tranquilidade e foco no que realmente importa: seus alunos.</p>
+                </div>
+
+                <div class="beneficio-card">
+                    <span class="beneficio-icon">🏠</span>
+                    <h3>Mais Tranquilidade na Rotina</h3>
+                    <p>Desfrute de uma rotina mais leve e prazerosa, sabendo que suas aulas serão sempre dinâmicas e bem preparadas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SEÇÃO "O QUE VOCÊ RECEBE"
+    ======================================== -->
+    <section class="conteudo">
+        <div class="container">
+            <h2>Exatamente o que você vai receber:</h2>
+            
+            <div class="conteudo-box">
+                <ul class="conteudo-lista">
+                    <li><strong>100 Aulas Completas:</strong> Um arsenal de atividades para todas as situações.</li>
+                    <li><strong>PDF Organizado:</strong> Material digital de fácil consulta e impressão.</li>
+                    <li><strong>Acesso Imediato:</strong> Comece a usar em minutos, sem esperas.</li>
+                    <li><strong>Garantia de 7 dias:</strong> Sua satisfação ou seu dinheiro de volta!</li>
+                </ul>
+            </div>
+
+            <!-- Seção 'Exemplo do conteúdo do PDF' removida conforme solicitado -->
+        </div>
+    </section>
+
+    <!-- ========================================
+         SEÇÃO DE PREÇO
+    ======================================== -->
+    <section class="preco">
+        <div class="container">
+            <h2>Invista no Seu Tempo e na Qualidade das Suas Aulas!</h2>
+            
+            <div class="preco-box">
+                <p class="preco-antigo">De R$ 49,90</p>
+                <p class="preco-atual">R$ 14,90</p>
+                <p class="preco-destaque">
+                    Investimento único • Acesso vitalício • Produto digital
+                </p>
+                
+                <a href="https://pay.cakto.com.br/vqca5rh_767670" class="btn-cta" id="cta2">
+                    <!-- INSERIR LINK DO CHECKOUT AQUI -->
+                    Sim! Quero Minhas Aulas Prontas Agora!
+                </a>
+            </div>
+
+            <p style="margin-top: 2rem; font-size: 0.95rem; color: #e0e0e0;">
+                💳 Compra 100% segura • Acesso imediato após confirmação do pagamento
+            </p>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SEÇÃO DE GARANTIA
+    ======================================== -->
+    <section class="garantia">
+        <div class="container">
+            <h2>Sua Satisfação é 100% Garantida!</h2>
+            
+            <div class="garantia-box">
+                <div class="garantia-selo">🛡️</div>
+                <p class="garantia-texto">
+                    Temos tanta certeza da qualidade e do valor do <strong>100 Aulas Prontas de Vôlei</strong> que oferecemos uma garantia incondicional de 7 dias. Se por qualquer motivo você não estiver satisfeito, basta nos enviar um e-mail e devolveremos 100% do seu investimento, sem perguntas. <strong>Seu risco é ZERO!</strong>
+                </p>
+                
+                <a href="https://pay.cakto.com.br/vqca5rh_767670" class="btn-cta" id="cta3" style="margin-top: 2rem;">
+                    <!-- INSERIR LINK DO CHECKOUT AQUI -->
+                    Garantir minhas aulas agora
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         RODAPÉ
+    ======================================== -->
+    <footer>
+        <div class="container">
+            <p><strong>100 Aulas Prontas de Vôlei</strong></p>
+            <p>Produto digital • Acesso imediato via download</p>
+            
+            <div class="footer-aviso">
+                <p>
+                    Este é um produto digital. Após a confirmação do pagamento, você receberá um e-mail com o link para download do material em formato PDF. 
+                    Não há envio de produtos físicos.
+                </p>
+                <p style="margin-top: 1rem;">
+                    © 2026 100 Aulas Prontas de Vôlei. Todos os direitos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
